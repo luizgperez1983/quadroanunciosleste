@@ -1,8 +1,6 @@
 @import url(./global.css);
 
 .cabecalho {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   display: grid;
   grid-template-columns: 2fr 3fr 1fr;
   position: relative;
@@ -12,8 +10,8 @@
   display: grid;
   grid-template-columns: 1fr;
   position: relative;
-  margin: 10px;
 }
+
 .congregacao-texto {
   display: block;
   font-size: 1.2rem;
@@ -21,8 +19,6 @@
 }
 
 .congregacao-nome {
-  text-align: center;
-  font-weight: bolder;
   font-size: 3rem;
   place-self: center;
 }
@@ -30,7 +26,6 @@
 .congregacao-cidade {
   display: block;
   font-size: 1.5rem;
-  font-style: italic;
   place-self: center;
 }
 
@@ -55,7 +50,6 @@
 .textodoano-versiculo {
   display: block;
   font-size: 1.5rem;
-  font-style: italic;
   place-self: center;
 }
 
@@ -66,34 +60,216 @@
 
 .proximareuniao {
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 150px 1fr;
   position: relative;
 }
 
-.proximareuniao-titulo {
+.tituloreunioes {
   display: block;
   border-radius: 0px;
-  text-align: center;
 }
 
 .proximareuniao-descricao {
   display: block;
-  text-align: center;
+  place-self: top center;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: left center;
+  border-bottom: #5b3c88 solid 1px;
+}
+
+.lista {
+  display: block;
+  margin: 5px;
+  color: #000000;
+  background-color: #d6d6d6;
 }
 
 .quadroanuncios {
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 150px 1fr;
   position: relative;
-}
-
-.quadroanuncios-titulo {
-  display: block;
-  border-radius: 0px;
-  text-align: center;
 }
 
 .quadroanuncios-descricao {
   display: block;
-  text-align: center;
+  grid-column: 2;
+  place-self: top center;
+  text-indent: 2rem;
+}
+
+.relatorios {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  position: relative;
+  align-content: flex-start;
+}
+
+.relatorios-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+
+.relatorios-form,
+.relatorios-form select {
+  font-size: 1.2rem;
+}
+
+.relatorios-publicador {
+  display: block;
+}
+
+.relatorios-periodo {
+  display: flex;
+}
+
+.relatorios-enviar {
+  display: block;
+  color: #000000;
+  border-radius: 6px;
+  background-color: #d6d6d6;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.reuniaomeiosemana {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  position: relative;
+}
+
+.reuniaomeiosemana-descricao-lista {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 2 / -1;
+}
+
+.reuniaointroducaoconclusao {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #afafaf;
+}
+
+.reuniaomeiosemana-reuniao1 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #626262;
+  color: #ffffff;
+  position: relative;
+}
+
+.reuniaomeiosemana-reuniao2 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #c48430;
+  color: #ffffff;
+  position: relative;
+}
+
+.reuniaomeiosemana-reuniao3 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #942926;
+  color: #ffffff;
+  position: relative;
+}
+
+.reuniaomeiosemana-conclusao {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.reuniaomeiosemana-imagem {
+  display: inline;
+  align-self: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.reuniaofinalsemana {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  position: relative;
+}
+
+.reuniaofinalsemana-descricao-lista {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 2 / -1;
+}
+
+.reuniaofinalsemana-reuniao1 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #626262;
+  color: #ffffff;
+  position: relative;
+}
+
+.reuniaofinalsemana-reuniao2 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #c48430;
+  color: #ffffff;
+  position: relative;
+}
+
+.titulo1-reuniao {
+  display: block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.titulo2-reuniao {
+  display: block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+.item-reuniao {
+  margin-left: 70px;
+  display: block;
+  font-size: 1.2rem;
+  align-self: center;
+}
+
+.tempo-reuniao {
+  display: block;
+  font-size: 1.2rem;
+  align-self: center;
+  font-style: 8c;
+}
+
+@media (max-width: 900px) {
+  .cabecalho {
+    font-size: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .cabecalho * {
+    margin: 1px;
+  }
+
+  .textodoano,
+  .linkJW {
+    display: none;
+  }
+
+  .principal {
+    grid-template-columns: 1fr;
+    margin: 5px;
+    gap: 5px;
+  }
 }

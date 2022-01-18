@@ -24,16 +24,13 @@ img {
 .titulos {
   background-color: #5b3c88;
   color: #ffffff;
-  border-radius: 6px;
   margin: 0px;
 }
 
 .linkJW {
   display: block;
   color: #ffffff;
-  text-align: center;
   font-size: 2rem;
-  font-weight: bolder;
   place-self: center right;
   padding: 10px;
 }
@@ -42,11 +39,58 @@ img {
   border: #5b3c88 solid 2px;
 }
 
+.bordasarredondadas {
+  border-radius: 6px;
+}
+
 .margem {
   margin: 10px;
-  border-radius: 6px;
+}
+
+.margemdebaixo {
+  margin-bottom: 10px;
+}
+
+.margemdireita {
+  margin-right: 10px;
+}
+
+.margemtopo {
+  margin-top: 10px;
 }
 
 .padding {
   padding: 10px;
+}
+
+.entrelinhas {
+  line-height: 1.5;
+}
+
+.expandecolunas {
+  grid-column: 1 / -1;
+}
+
+.expandelinhas {
+  grid-row: 1 / -3;
+}
+
+.negrito {
+  font-weight: bold;
+}
+
+.italico {
+  font-style: italic;
+}
+
+.centralizado {
+  text-align: center;
+}
+
+.esquerda {
+  text-align: left;
+}
+
+.justificado {
+  text-align: justify;
 }

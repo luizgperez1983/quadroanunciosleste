@@ -16,7 +16,6 @@
 }
 
 .congregacao {
-  text-align: center;
   align-items: flex-end;
   justify-items: center;
   display: grid;
@@ -28,9 +27,8 @@
 .congregacao-numero {
   display: block;
   font-size: 1rem;
-  font-style: italic;
-  top: 2px;
-  left: 2px;
+  top: 5px;
+  left: 5px;
   position: absolute;
 }
 
@@ -44,13 +42,11 @@
 
 .congregacao-nome {
   font-size: 2rem;
-  font-weight: bold;
 }
 
 .congregacao-cidade {
   margin-bottom: 10px;
   font-size: 1.2rem;
-  font-style: italic;
 }
 
 @media (max-width: 450px) {
