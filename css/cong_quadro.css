@@ -1,0 +1,99 @@
+@import url(./global.css);
+
+.cabecalho {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  position: relative;
+}
+
+.congregacao {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  margin: 10px;
+}
+.congregacao-texto {
+  display: block;
+  font-size: 1.2rem;
+  place-self: top left;
+}
+
+.congregacao-nome {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 3rem;
+  place-self: center;
+}
+
+.congregacao-cidade {
+  display: block;
+  font-size: 1.5rem;
+  font-style: italic;
+  place-self: center;
+}
+
+.textodoano {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  margin: 10px;
+}
+
+.textodoano-ano {
+  display: block;
+  font-size: 1.2rem;
+  place-self: top left;
+}
+
+.textodoano-texto {
+  font-size: 2rem;
+  place-self: center;
+}
+
+.textodoano-versiculo {
+  display: block;
+  font-size: 1.5rem;
+  font-style: italic;
+  place-self: center;
+}
+
+.principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.proximareuniao {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  position: relative;
+}
+
+.proximareuniao-titulo {
+  display: block;
+  border-radius: 0px;
+  text-align: center;
+}
+
+.proximareuniao-descricao {
+  display: block;
+  text-align: center;
+}
+
+.quadroanuncios {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  position: relative;
+}
+
+.quadroanuncios-titulo {
+  display: block;
+  border-radius: 0px;
+  text-align: center;
+}
+
+.quadroanuncios-descricao {
+  display: block;
+  text-align: center;
+}

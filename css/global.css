@@ -1,0 +1,52 @@
+body {
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+}
+
+body,
+h1,
+h2,
+span,
+p,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.titulos {
+  background-color: #5b3c88;
+  color: #ffffff;
+  border-radius: 6px;
+  margin: 0px;
+}
+
+.linkJW {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  place-self: center right;
+  padding: 10px;
+}
+
+.bordas {
+  border: #5b3c88 solid 2px;
+}
+
+.margem {
+  margin: 10px;
+  border-radius: 6px;
+}
+
+.padding {
+  padding: 10px;
+}

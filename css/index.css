@@ -1,0 +1,66 @@
+@import url(./global.css);
+
+.cabecalho {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.lista-congregacoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 220px);
+  border-radius: 6px;
+  gap: 5px;
+}
+
+.congregacao {
+  text-align: center;
+  align-items: flex-end;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  margin: 0px;
+}
+
+.congregacao-numero {
+  display: block;
+  font-size: 1rem;
+  font-style: italic;
+  top: 2px;
+  left: 2px;
+  position: absolute;
+}
+
+.congregacao-imagem {
+  margin-top: 25px;
+  width: 200px;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.congregacao-nome {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.congregacao-cidade {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+@media (max-width: 450px) {
+  .cabecalho {
+    margin: 1px;
+    font-size: 0.8rem;
+  }
+  .lista-congregacoes {
+    grid-template-columns: 1fr;
+    margin: 5px;
+    gap: 5px;
+  }
+}
